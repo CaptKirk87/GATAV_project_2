@@ -35,7 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="80sp"
         android:layout_alignLeft="@+id/button2"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/textView1"
         android:layout_marginTop="20dp"
         android:onClick="@string/FHKLlink"
         android:text="@string/FHKLlink"
