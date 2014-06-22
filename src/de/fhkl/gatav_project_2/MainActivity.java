@@ -1,6 +1,6 @@
 package de.fhkl.gatav_project_2;
 
-import de.fhkl.praktikum01_a1.R;
+
 import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
