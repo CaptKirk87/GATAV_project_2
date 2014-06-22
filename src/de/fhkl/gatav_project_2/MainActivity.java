@@ -1,13 +1,17 @@
 package de.fhkl.gatav_project_2;
 
+import de.fhkl.praktikum01_a1.R;
 import android.app.Activity;
 import android.app.Fragment;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -22,6 +26,28 @@ public class MainActivity extends Activity {
 		}
 	}
 
+	//Button Click Events
+	public void clicked(View v) {
+		if (v.getId() == R.id.FHKLlink) {
+			Uri adress = Uri.parse("http://www.fh-kl.de/");
+			Intent intent = new Intent(Intent.ACTION_VIEW, adress);
+			startActivity(intent);
+		}
+
+		if (v.getId() == R.id.button2) {
+			Toast toast = Toast.makeText(this, "Ein Toast", Toast.LENGTH_LONG);
+			toast.show();
+		}
+		if (v.getId() == R.id.button3) {
+			Toast toast = Toast.makeText(this, "Ein Toast", Toast.LENGTH_LONG);
+			toast.show();
+		}
+		if (v.getId() == R.id.button4) {
+			Toast toast = Toast.makeText(this, "Ein Toast", Toast.LENGTH_LONG);
+			toast.show();
+		}
+	}
+
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 
@@ -31,15 +57,14 @@ public class MainActivity extends Activity {
 	}
 
 	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
+	public boolean onOptionsItemSelected(MenuItem item)
+	{
+	if(item.getItemId() == R.id.action_show_42)
+		{
+			Toast toast = Toast.makeText(this, "42", Toast.LENGTH_LONG);
+			toast.show();
 		}
-		return super.onOptionsItemSelected(item);
+	return true;
 	}
 
 	/**

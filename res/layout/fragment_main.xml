@@ -6,12 +6,10 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/black"
     tools:context="de.fhkl.gatav_project_2.MainActivity$PlaceholderFragment" >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-         />
+
     
     <TextView
         android:id="@+id/textView1"
@@ -19,7 +17,8 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="@string/Ueberschrift"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:layout_marginBottom="64dp" />
 
     <RelativeLayout
         android:id="@+id/relativeLayout1"
@@ -31,15 +30,15 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/FHKLlink"
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
         android:layout_alignLeft="@+id/button2"
         android:layout_below="@+id/textView2"
         android:layout_marginTop="20dp"
-        android:onClick="@string/Button1"
-        android:text="@string/Button1"
+        android:onClick="@string/FHKLlink"
+        android:text="@string/FHKLlink"
         android:textStyle="bold"
         android:width="120dp" />
 
@@ -47,9 +46,9 @@
     <Button
         android:id="@+id/button2"
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
+        android:layout_below="@+id/FHKLlink"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="26dp"
         android:text="@string/Button2"
@@ -59,8 +58,8 @@
     <Button
         android:id="@+id/button4"
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
         android:layout_alignLeft="@+id/button2"
         android:layout_below="@+id/button2"
         android:layout_marginTop="22dp"
@@ -71,8 +70,8 @@
     <Button
         android:id="@+id/button3"
         style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="80sp"
         android:layout_alignLeft="@+id/button4"
         android:layout_below="@+id/button4"
         android:layout_marginTop="22dp"
